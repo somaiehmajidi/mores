@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mores</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container justify-content-between">
+        <a class="navbar-brand" href="#">
+          <div class="d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="Logo" width="40" height="auto"
+              class="d-inline-block align-text-top mb-2">
+              <span class="px-2">Mores</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-align-justify" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#item-slider">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-us">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselBanner" class="carousel slide" style="height: 100vh; overflow: hidden;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-img" style="background-image: url('assets/img/bg-04.jpg');"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Forecasting Tomorrow: Cash Flow in Your Hands</h1>
+            <span>Features no.1</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img" style="background-image: url('assets/img/bg-05.jpg');"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Growing Together: From Basics to Brilliance</h1>
+            <span>Features no.2</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img" style="background-image: url('assets/img/bg-06.jpg');"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Innovating Complexity: Foreign Invoices and Beyond </h1>
+            <span>Features no.3</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <section id="history" style="margin-top: 4em;">
+    <div class="container">
+      <h1>History</h1>
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="assets/img/bg-01.jpg" alt="" width="100%" height="auto">
+            <div class="overlay">
+              <div>
+                <span class="overlay-layer"></span>
+                <span>Feature no.44</span>
+                <h3>Our Journey: From Retail to Revolutionizing</h3>
+                <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 second-history-box">
+          <div class="row">
+            <div class="col-lg-12 col-md-6">
+              <div class="hovereffect">
+                <img class="img-responsive" src="assets/img/bg-02.jpg" alt="" width="100%" height="auto">
+                <div class="overlay overlay-2">
+                  <div>
+                    <span class="overlay-layer"></span>
+                    <span>Feature no.44</span>
+                    <h4>Our Journey</h4>
+                    <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6" style="margin-top:1.05em;">              
+              <div class="hovereffect">
+                <img class="img-responsive" src="assets/img/bg-03.jpg" alt="" width="100%" height="auto">
+                <div class="overlay overlay-2">
+                  <div>
+                    <span class="overlay-layer"></span>
+                    <span>Feature no.44</span>
+                    <h4>Our Journey</h4>
+                    <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="item-slider" style="margin-top: 8em; padding-bottom: 8em;">
+    <div class="container">
+      <div id="carouselItems" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselItems" data-bs-slide-to="4" aria-label="Slide 5"></button>  
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/can.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Forecasting Tomorrow</h3>
+              <p>We empower you to forecast your cash flow based on your unique needs, 
+                considering future payables and receivables.</p>
+              <br />
+              <span>Features no.1</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/can.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Forecasting Tomorrow</h3>
+              <p>We empower you to forecast your cash flow based on your unique needs, 
+                considering future payables and receivables.</p>
+              <br />
+              <span>Features no.1</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/can.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Forecasting Tomorrow</h3>
+              <p>We empower you to forecast your cash flow based on your unique needs, 
+                considering future payables and receivables.</p>
+              <br />
+              <span>Features no.1</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/can.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Forecasting Tomorrow</h3>
+              <p>We empower you to forecast your cash flow based on your unique needs, 
+                considering future payables and receivables.</p>
+              <br />
+              <span>Features no.1</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/can.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Forecasting Tomorrow</h3>
+              <p>We empower you to forecast your cash flow based on your unique needs, 
+                considering future payables and receivables.</p>
+              <br />
+              <span>Features no.1</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselItems" data-bs-slide="prev">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselItems" data-bs-slide="next">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us" style="margin-top: 4em;">
+    <div class="container">
+      <div class="container-wrap">
+        <h1>About Us</h1>
+        <p>Eight Years Ago: A Quest for Perfection - 
+        Eight years ago, our journey began in the dynamic world of retail and wholesale business. 
+        Determined to streamline our operations, we embarked on a thorough exploration of available software solutions. 
+        Our intention was clear - find the perfect tool that could grow alongside us, 
+        meeting our evolving needs seamlessly. </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="assets/img/bg-05.jpg" alt="" width="100%" height="auto">
+            <div class="overlay">
+              <div>
+                <span class="overlay-layer"></span>
+                <span>Feature no.44</span>
+                <h3>From Retail to Revolutionizing</h3>
+                <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 second-history-box">
+          <div class="hovereffect">
+            <img class="img-responsive" src="assets/img/bg-05.jpg" alt="" width="100%" height="auto">
+            <div class="overlay">
+              <div>
+                <span class="overlay-layer"></span>
+                <span>Feature no.44</span>
+                <h3>\From Retail to Revolutionizing</h3>
+                <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="welcome" style="margin-top: 4em;">
+    <div class="welcome-bg">
+      <div class="container">
+        <div class="container-wrap">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div>THE MORES EXPERIENCE</div>
+              <h1>Welcome to <br />MORES®!</h1>
+              <p>Eight years ago, our journey began in the dynamic world of retail and wholesale business. 
+                Determined to streamline our operations, we embarked on a thorough exploration of available software solutions. 
+                Our intention was clear - find the perfect tool that could grow alongside us, 
+                meeting our evolving needs seamlessly. </p>
+              <br />
+              <span>The experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: 4em;">
+    <div class="footer-wrap">
+        <div class="container" style="position: relative;">
+          <div class="footer-container-wrap">
+            <div class="d-flex justify-content-between footer-list">
+              <div class="d-flex footer-list-menu">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Cookie policy</a></li>
+                  <li><a href="#">Mores Privacy Policy</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+              <ul class="d-flex socials">
+                <li><a href="#">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a></li>
+              </ul>
+            </div>
+            <div class="footer-logo pt-4 pb-2">
+              <h4>MORES®</h4>
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script>
+    let prevScrollPos = window.pageYOffset;
+    window.addEventListener('scroll', function() {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.querySelector('.navbar').classList.add('fixed-top');
+      } else {
+        document.querySelector('.navbar').classList.remove('fixed-top');
+      }
+      prevScrollPos = currentScrollPos;
+    })
+  </script>
+</body>
+
+</html>
