@@ -551,7 +551,7 @@ footer:before {
   width: 35%;
   position: absolute;
   left:0;
-  top:30%;
+  top:15%;
 }
 
 .pro-sec-two {
@@ -565,7 +565,7 @@ footer:before {
   width: 35%;
   position: absolute;
   right:0;
-  top:30%;
+  top:15%;
 }
 
 .pro-sec-body h3 {
@@ -752,6 +752,13 @@ button.bannerBtn:hover, button.bannerBtn:focus, button.sbannerBtn:active {
   color: #999;
 }
 
+.modules .module {
+  display: none;
+}
+
+.modules .module:first-child {
+  display: block;
+}
 
 @media (max-width: 768px) {
   .second-history-box {

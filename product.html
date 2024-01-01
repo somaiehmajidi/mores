@@ -60,46 +60,46 @@
     </section>
   </header>
 
-  <section  style="padding:50px 0 40px;">
+  <section id="module_selectors" style="padding:50px 0 40px;">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center product-box-wrappers" style="margin-top: 2%;">
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_1')">
           <div class="pro-features">
             <img src="assets/img/3.svg" style="width:72px;height: 72px;">
-            <h6>Sale</h6>
+            <h6 class="text-nowrap">Auditor Reports</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_2')">
           <div class="pro-features">
             <img src="assets/img/1.svg" style="width:72px;height: 72px;">
             <h6>Accounting</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_3')">
           <div class="pro-features">
             <img src="assets/img/2.svg" style="width:72px;height: 72px;">
             <h6>Cost</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_4')">
           <div class="pro-features">
             <img src="assets/img/4.svg" style="width:72px;height: 72px;">
             <h6>CostSharing</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_5')">
           <div class="pro-features">
             <img src="assets/img/5.svg" style="width:72px;height: 72px;">
             <h6>Warehouse</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_6')">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6>Dashboard</h6>
           </div>
         </a>
-        <a class="product-box" href="product.html">
+        <a class="product-box" onclick="onModuleClicked('module_7')">
           <div class="pro-features">
             <img src="assets/img/7.svg" style="width:72px;height: 72px;">
             <h6>Payroll</h6>
@@ -109,7 +109,127 @@
     </div>
   </section>
 
-  <section style="padding:40px 0;">
+  <section class="modules" style="padding: 40px 0;">
+    <div class="module module_1">
+      <div class="container">
+        <h1 class="text-center">Module1: Auditor Reports</h1>
+        <p>Welcome to our Auditor Reports, a specialized solution designed to revolutionize your auditing processes, 
+          providing targeted benefits and addressing key pain points. 
+          This module is engineered to empower auditors with a suite of features that go beyond mere compliance, 
+          focusing on efficiency, automation, and in-depth insights.</p>
+      </div>
+      <div class="container" style="position: relative;">
+        <div>
+        <div class="pro-sec-one">
+          <div class="pro-img">
+            <img src="assets/img/Product2.png" alt="Mores-Accounting" width="100%" height="auto">
+          </div>
+          <div class="pro-sec-body">
+            <h3>Real-time Compliance Tracking</h3>
+            <ul>
+              <li>Benefit to User:</li>
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                <span>Stay ahead of regulatory requirements with our real-time compliance tracking. Receive instant alerts and notifications about any deviations, ensuring that auditors can address issues promptly.</span>
+              </li>
+              <li>Use Case:</li>
+              <li>
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                <span>Imagine a scenario where a new regulation is implemented. proactively update the compliance parameters, allowing auditors to quickly assess the impact on existing processes and make necessary adjustments.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="container" style="position: relative;">
+        <div>
+          <div class="pro-sec-two">
+            <div class="pro-img">
+              <img src="assets/img/bg-04.jpg" alt="Mores-Accounting" width="100%" height="auto">
+            </div>
+            <div class="pro-sec-body">
+              <h3>Customizable Forensic Analysis Reports</h3>
+              <ul>
+                <li>Benefit to User:</li>
+                <li>
+                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  <span>Tailor your audit reports to meet specific forensic analysis needs. Our module allows auditors to dig deep into transactional data, providing a granular view of activities for more accurate assessments.</span>
+                </li>
+                <li>Use Case:</li>
+                <li>
+                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  <span>During a forensic audit, our software helps auditors trace the origin of a financial discrepancy to a specific transaction, reducing the time spent on investigations and allowing for more targeted corrective actions.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="position: relative;">
+        <div>
+          <div class="pro-sec-one">
+            <div class="pro-img">
+              <img src="assets/img/bg-05.jpg" alt="Mores-Accounting" width="100%" height="auto">
+            </div>
+            <div class="pro-sec-body">
+              <h3>Automated Documentation and Evidence Gathering</h3>
+              <ul>
+                <li>Benefit to User:</li>
+                <li>
+                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  <span>Save valuable time by automating the documentation process. Our module automatically gathers and organizes evidence, creating a comprehensive audit trail without manual intervention.</span>
+                </li>
+                <li>Use Case:</li>
+                <li>
+                  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  <span>In the event of an external audit, auditors can significantly reduce the time and effort required to compile evidence. The automated system ensures that all relevant documentation is readily available, expediting the auditing process.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h3>Business Expansion and ROI</h3>
+        <ul style="list-style: none;">
+          <li>
+            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <span>Time Savings and Resource Optimization:</span>
+          </li>
+          <li>
+            By automating manual tasks and streamlining the audit process, 
+          auditors can allocate more time to strategic analysis. 
+          This not only enhances the overall efficiency of the auditing team but also allows for a more thorough 
+          examination of financial processes.
+          </li>
+          <li class="pt-2">
+            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <span>Strategic Decision Support:</span>
+          </li>
+          <li>
+            The detailed insights provided by our Auditor Reports module go beyond compliance. 
+          Auditors can leverage this data to support strategic decision-making, identifying areas for 
+          improvement and contributing to the overall growth and expansion of the business.
+          </li>
+        </ul>
+        <p style="font-weight: bold;">
+          In essence, our Auditor Reports module is a precision tool for auditors, 
+          providing the specific features needed to excel in a dynamic business environment. 
+          It's not just about meeting compliance standards; 
+          it's about elevating your auditing processes to drive business success.
+        </p>
+      </div>
+    </div>
+    <div class="module module_2 container">module 2</div>
+    <div class="module module_3 container">module 3</div>
+    <div class="module module_4 container">module 4</div>
+    <div class="module module_5 container">module 5</div>
+    <div class="module module_6 container">module 6</div>
+    <div class="module module_7 container">module 7</div>
+  </section>
+
+  <!-- <section style="padding:40px 0;">
     <div class="container" style="position: relative;">
       <h1 class="text-center">Work smarter with Mores cloud accounting software</h1>
       <div>
@@ -211,15 +331,15 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section  style="padding:0 0 40px">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center product-box-wrappers" style="margin-top: 2%;">
-        <a class="product-box" href="product.html">
+        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_1')">
           <div class="pro-features">
             <img src="assets/img/3.svg" style="width:72px;height: 72px;">
-            <h6>Sale</h6>
+            <h6 class="text-nowrap">Auditor Reports</h6>
           </div>
         </a>
         <a class="product-box" href="product.html">
@@ -440,6 +560,8 @@
   </footer>
 
   <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <script>
     let prevScrollPos = window.pageYOffset;
     window.addEventListener('scroll', function() {
@@ -466,6 +588,11 @@
         icon.classList.add('fa-angle-up')
         icon.classList.remove('fa-angle-down')
       }
+    }
+
+    function onModuleClicked(className) {
+      $('.modules > .module').hide()
+      $(`.modules .${className}`).slideToggle()
     }
   </script>
 </body>
