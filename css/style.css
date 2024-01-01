@@ -749,7 +749,14 @@ button.bannerBtn:hover, button.bannerBtn:focus, button.sbannerBtn:active {
 .product-box {
   display: block;
   cursor: pointer;
-  color: #999;
+  color: #aaa;
+  opacity: .8;
+}
+
+.selected-box,
+.product-box:hover {
+  color: #777;
+  opacity: 1;
 }
 
 .modules .module {

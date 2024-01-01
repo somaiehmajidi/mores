@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Mores</title>
+  <title>Mores - Products</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
 <body>
@@ -63,43 +64,43 @@
   <section id="module_selectors" style="padding:50px 0 40px;">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center product-box-wrappers" style="margin-top: 2%;">
-        <a class="product-box" onclick="onModuleClicked('module_1')">
+        <a class="product-box selected-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Auditor Reports</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_2')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Multi-location</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_3')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Order Fulfillment</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_4')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6>Sale/Purchase</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_5')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6>Expense</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_6')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Packing List</h6>
           </div>
         </a>
-        <a class="product-box" onclick="onModuleClicked('module_7')">
+        <a class="product-box">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Payroll</h6>
@@ -929,43 +930,43 @@ This comprehensive record-keeping feature is invaluable for both internal review
   <section  style="padding:0 0 40px">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center product-box-wrappers" style="margin-top: 2%;">
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_1')">
+        <a class="product-box selected" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Auditor Reports</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_2')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Multi-location</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_3')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Order Fulfillment</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_4')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6>Sale/Purchase</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_5')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6>Expense</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_6')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Packing List</h6>
           </div>
         </a>
-        <a class="product-box" href="#module_selectors" onclick="onModuleClicked('module_7')">
+        <a class="product-box" href="#module_selectors">
           <div class="pro-features">
             <img src="assets/img/6.svg" style="width:72px;height: 72px;">
             <h6 class="text-nowrap">Payroll</h6>
@@ -1183,10 +1184,17 @@ This comprehensive record-keeping feature is invaluable for both internal review
       }
     }
 
-    function onModuleClicked(className) {
+    $('.product-box-wrappers .product-box').click(function(event) {
+      if ($(this).hasClass('selected-box')) {
+        return
+      }
+      const index = $(this).index()
+
       $('.modules > .module').hide()
-      $(`.modules .${className}`).slideToggle()
-    }
+      $(`.modules .module_${index+1}`).slideToggle()
+      $('.product-box-wrappers .product-box').removeClass('selected-box')
+      $(`.product-box-wrappers .product-box:nth-child(${index+1})`).addClass('selected-box')
+    })
   </script>
 </body>
 
